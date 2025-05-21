@@ -16,7 +16,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>E-Com System on Pbancha V1.0.0 (create-a-sign-up-ui-form:Jira)</h1>
+      <h1>E-Com System on Pbancha V2.0.1 (create-a-sign-up-ui-form:Jira)(bug fixed)</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

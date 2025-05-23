@@ -20,7 +20,7 @@ function App() {
       <h1>added my order (tossaworn) 2</h1>
       <h1>added in by PBE-12-Test-auto-move-to-inprogess</h1>
        <h1>Test Days 4 (Version 4.0.0): Learn deploy Test CI (Workflow) </h1>
-      <div className=>."card">
+      <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>

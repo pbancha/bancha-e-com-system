@@ -22,6 +22,7 @@ function App() {
       <h1>Test Days 4 (Version 4.0.0): Learn deploy Test CI (Workflow) </h1>
       <h1>Fixed Bug Title </h1>
       <h1>Add Deploy github workflow (Version 8.0.0)</h1>
+      <h1>Add Deploy github Notofy to Jira workflow (Version 9.0.0)</h1>
       <div className ="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

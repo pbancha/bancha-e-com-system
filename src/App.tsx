@@ -21,6 +21,7 @@ function App() {
       <h1>added in by PBE-12-Test-auto-move-to-inprogess</h1>
       <h1>Test Days 4 (Version 4.0.0): Learn deploy Test CI (Workflow) </h1>
       <h1>Fixed Bug Title </h1>
+      <h1>Add Deploy github workflow </h1>
       <div className ="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

@@ -1,29 +1,29 @@
 name: Deploy to Production on Release
 
-on: 
+on:
   release:
     types: [created]
-      
+
 permissions:
-    pages: write
-    deployments: write
-    id-token: write
+  pages: write
+  deployments: write
+  id-token: write
 
 jobs:
-    deploy:
-      if: ${{github.event.release.target_commitsh == 'Production'}}
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v4
-        - uses: actions/setup-node@v4
-          with:
-            node-version: 22
-            cache: npm
-        - run: npm ci
-        - run: npm run build
-        - uses: action/configure-pages@v5
-        - uses: action/upload-pages-artifact@v3
-          with:
-            path: dist
-        - uses: actions/deploy-pages@v4
+  deploy:
+    if: ${{ github.event.release.target_commitish == 'Production' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4
 
